@@ -1,0 +1,103 @@
+    Point of Sale (POS) Transaction:
+        Transaction Date (Date/Time)
+        Transaction ID (Auto-number)
+        Customer (Lookup to the Customer object)
+        Total Amount (Currency)
+        Payment Method (Picklist)
+        Payment Status (Picklist: Paid, Pending, Refunded, etc.)
+        Notes (Text Area)
+
+    Product/Item:
+        Product Name (Text)
+        SKU (Text)
+        Price (Currency)
+        Category (Picklist)
+        Quantity in Stock (Number)
+        Reorder Level (Number)
+        Supplier (Lookup to a Supplier object, if applicable)
+        Description (Text Area)
+
+    Customer:
+        First Name (Text)
+        Last Name (Text)
+        Email (Email)
+        Phone (Phone)
+        Address (Text Area)
+        Loyalty Points (Number)
+        Loyalty Tier (Picklist: Bronze, Silver, Gold, etc.)
+        Last Purchase Date (Date/Time)
+        Total Purchases (Currency)
+
+    Inventory:
+        Product (Lookup to the Product/Item object)
+        Quantity in Stock (Number)
+        Last Updated Date (Date/Time)
+        Location (Text)
+        Cost Price (Currency)
+
+    Payment Method:
+        Payment Method Name (Text)
+        Description (Text Area)
+
+    Loyalty Program:
+        Loyalty Program Name (Text)
+        Points Required for Redemption (Number)
+        Reward Description (Text Area)
+
+    Sales Rep/User:
+        User Name (Text)
+        Contact Number (Phone)
+        Email (Email)
+        Sales Target (Currency)
+        Total Sales (Currency)
+
+    Discounts/Coupons:
+        Discount Name (Text)
+        Discount Type (Picklist: Percentage, Fixed Amount, etc.)
+        Amount (Currency)
+        Valid From (Date)
+        Valid To (Date)
+        Applicable Products (Multi-select Picklist)
+
+    POS Settings/Configuration:
+        Tax Rate (Percentage)
+        Currency (Picklist)
+        Receipt Format (Text Area)
+        Default Payment Method (Picklist)
+        Receipt Footer Message (Text Area)
+
+    Sales Analytics:
+        Date (Date)
+        Total Sales (Currency)
+        Number of Transactions (Number)
+        Top Selling Product (Lookup to the Product/Item object)
+        Customer Insights (Text Area)
+		
+	Supplier:
+        Supplier Name: Text field to store the name of the supplier.
+		
+        Contact Name: Text field to store the name of the primary contact person at the supplier's company.
+		
+		Contact Email: Email field to store the email address of the primary contact person.
+	
+		Contact Phone: Phone field to store the contact phone number of the primary contact person.
+
+		Supplier Address: Text area field to store the address of the supplier's location.
+
+		Supplier Website: URL field to store the website address of the supplier (if available).
+
+		Supplier Category: Picklist field to categorize the type of supplier (e.g., Food, Beverage, Cleaning Supplies, etc.).
+
+		Supplier Rating: Number field or picklist to rate the supplier's performance or quality (e.g., 1-5 stars).
+
+		Payment Terms: Text field to store the agreed-upon payment terms with the supplier (e.g., Net 30, Net 60).
+
+		Preferred Supplier: Checkbox field to indicate if the supplier is a preferred or strategic partner.
+
+		Active Supplier: Checkbox field to indicate if the supplier is currently active.
+
+		Products Provided: Related list or multi-select picklist to link the supplier to the products they provide.
+
+		Last Interaction Date: Date field to track the date of the last interaction with the supplier.
+
+		Notes: Text area field to add any additional notes or comments about the supplier.
